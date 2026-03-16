@@ -1,5 +1,3 @@
-#api_response = '{"player": "Mario", "score": 100, "items": ["mushroom", "star"]}'
-
 import json
 
 s = input()
