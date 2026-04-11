@@ -140,8 +140,6 @@ def main():
         elif choice == "0":
             break
 
-main()
 
 create_table()
-insert_from_csv("contacts.csv")
-delete_contact()
+main()
