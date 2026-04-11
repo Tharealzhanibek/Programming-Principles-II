@@ -114,7 +114,34 @@ def delete_contact():
     conn.commit()
     conn.close()
 
+def main():
+    create_table()
+    while True:
+        print("\n--- PhoneBook Menu ---")
+        print("1. Import from CSV")
+        print("2. Add contact manually")
+        print("3. Search contacts")
+        print("4. Update contact")
+        print("5. Delete contact")
+        print("0. Exit")
+
+        choice = input("Choose: ")
+
+        if choice == "1":
+            insert_from_csv("contactns.csv")
+        elif choice == "2":
+            insert_from_console()
+        elif choice == "3":
+            search_contacts()
+        elif choice == "4":
+            update_contact()
+        elif choice == "5":
+            delete_contact()
+        elif choice == "0":
+            break
+
+main()
+
 create_table()
 insert_from_csv("contacts.csv")
-# search_contacts()
 delete_contact()
