@@ -1,7 +1,10 @@
-def square(x):
-    return x * x
+def power(n):
+    return n*n
 
-a = int(input())
-numbers = list(map(int, input().split()))
+n = int(input())
 
-print(sum(map(square, numbers)))
+arr = list(map(int, input().split()))
+
+res = list(map(power, arr))
+
+print(res)
