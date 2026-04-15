@@ -140,6 +140,5 @@ def main():
         elif choice == "0":
             break
 
-
 create_table()
 main()
