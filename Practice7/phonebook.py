@@ -128,7 +128,7 @@ def main():
         choice = input("Choose: ")
 
         if choice == "1":
-            insert_from_csv("contactns.csv")
+            insert_from_csv("contacts.csv")
         elif choice == "2":
             insert_from_console()
         elif choice == "3":
